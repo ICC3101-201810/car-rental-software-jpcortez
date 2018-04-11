@@ -6,8 +6,32 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp8
 {
-    class Sucursal
+    public class Sucursal
     {
-        string ID;
+        public string id;
+        public List<Vehiculo> vehiculos;
+        public List<Arriendo> arriendos;
+
+        public Sucursal(string id)
+        {
+            this.id = id;
+        }
+
+        public void AddVehiculo(Vehiculo vehiculo)
+        {
+            vehiculos.Add(vehiculo);
+        }
+
+        public void AddArriendo(Arriendo arriendo)
+        {
+            if (arriendo.VerificarLicencia())
+            {
+                arriendos.Add(arriendo);
+            }
+            else
+            {
+                Console.WriteLine("No posee la licencia necesaria, no se pudo agregar.\n");
+            }
+        }
     }
 }

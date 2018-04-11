@@ -8,14 +8,23 @@ namespace ConsoleApp8
 {
     public class Persona : Cliente
     {
-        public string nombre, rut;
+        public string domicilio;
 
-        public Persona(string nombre, string rut)
+        public Persona(string nombre, string rut, string domicilio) : base(nombre, rut)
         {
-            this.nombre = nombre;
-            this.rut = rut;
+            this.domicilio = domicilio;
         }
 
-        
+        public override void AddLicencia(string tipo)
+        {
+            licencias.Add(tipo);
+        }
+        public override void AddPermisos(string tipo)
+        {
+        }
+        public override string GetTipo()
+        {
+            return "Persona";
+        }
     }
 }

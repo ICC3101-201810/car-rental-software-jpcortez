@@ -8,6 +8,18 @@ namespace ConsoleApp8
 {
     public abstract class Cliente
     {
-        string nombre, rut;
+        public string nombre, rut;
+        public List<string> licencias;
+        public List<string> permiso;
+
+        public Cliente(string nombre, string rut)
+        {
+            this.nombre = nombre;
+            this.rut = rut;
+        }
+
+        abstract public void AddLicencia(string tipo);
+        abstract public void AddPermisos(string tipo);
+        abstract public string GetTipo();
     }
 }

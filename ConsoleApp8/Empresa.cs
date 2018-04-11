@@ -8,8 +8,23 @@ namespace ConsoleApp8
 {
     public class Empresa : Cliente
     {
-        public string nombre;
-        public string rut;
+        public string ubicacion;
 
+        public Empresa(string nombre, string rut, string ubicacion) : base(nombre, rut)
+        {
+            this.ubicacion = ubicacion;
+        }
+        public override void AddLicencia(string tipo)
+        {
+        }
+        public override void AddPermisos(string tipo)
+        {
+            permiso.Add(tipo);
+        }
+        public override string GetTipo()
+        {
+            return "Empresa";
+        }
     }
+
 }
