@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp8
 {
-    public class Vehiculo
+    public abstract class Vehiculo
     {
-        public string tipo, tipoLicencia, tipoPermiso, patente;
+        public string tipoLicencia, tipoPermiso, patente;
         public int valor, anho;
 
-        public Vehiculo( string tipo, string tipoLicencia, string tipoPermiso, string patente, int  valor, int anho)
+        public Vehiculo(string tipoLicencia, string tipoPermiso, string patente, int  valor, int anho)
         {
-            this.tipo = tipo;
             this.tipoLicencia = tipoLicencia;
             this.patente = patente;
             this.valor = valor;

@@ -11,6 +11,7 @@ namespace ConsoleApp8
         public string nombre, rut;
         public List<string> licencias;
         public List<string> permiso;
+        public List<Arriendo> arrendados;
 
         public Cliente(string nombre, string rut)
         {

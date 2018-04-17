@@ -27,6 +27,7 @@ namespace ConsoleApp8
             if (arriendo.VerificarLicencia())
             {
                 arriendos.Add(arriendo);
+                arriendo.cliente.arrendados.Add(arriendo);
             }
             else
             {

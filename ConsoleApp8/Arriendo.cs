@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +8,6 @@ namespace ConsoleApp8
 {
     public class Arriendo
     {
-        public string id;
         public Cliente cliente;
         public Vehiculo vehiculo;
         public DateTime i, f;
