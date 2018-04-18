@@ -117,7 +117,7 @@ namespace ConsoleApp8
                             {
                                 if (ids == s.id)
                                 {
-                                    s.AddVehiculo(m);
+                                    s.vehiculos.Add(m);
                                 }
                             }
                         }
@@ -135,7 +135,7 @@ namespace ConsoleApp8
                             {
                                 if (ids == s.id)
                                 {
-                                    s.AddVehiculo(a);
+                                    s.vehiculos.Add(a);
                                 }
                             }
                         }

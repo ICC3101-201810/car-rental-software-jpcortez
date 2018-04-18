@@ -17,6 +17,9 @@ namespace ConsoleApp8
         {
             this.nombre = nombre;
             this.rut = rut;
+            licencias = new List<string>();
+            permiso = new List<string>();
+            arrendados = new List<Arriendo>();
         }
 
         abstract public void AddLicencia(string tipo);

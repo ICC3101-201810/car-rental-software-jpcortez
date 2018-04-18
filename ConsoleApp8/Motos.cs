@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp8
 {
-    class Motos:Vehiculo
+    class Motos : Vehiculo
     {
         public string tipo;
         public Motos(string tipoLicencia, string tipoPermiso, string patente, int valor, int anho) : base(tipoLicencia, tipoPermiso, patente, valor, anho)

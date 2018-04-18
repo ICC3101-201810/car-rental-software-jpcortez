@@ -20,6 +20,7 @@ namespace ConsoleApp8
             this.vehiculo = vehiculo;
             this.i = i;
             this.f = f;
+            accesorios = new List<Accesorios>();
         }
 
         public void AddAccesorio(Accesorios accesorio)

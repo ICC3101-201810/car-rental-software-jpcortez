@@ -15,13 +15,10 @@ namespace ConsoleApp8
         public Sucursal(string id)
         {
             this.id = id;
-        }
+            vehiculos = new List<Vehiculo>();
+            arriendos = new List<Arriendo>();
 
-        public void AddVehiculo(Vehiculo vehiculo)
-        {
-            vehiculos.Add(vehiculo);
         }
-
         public void AddArriendo(Arriendo arriendo)
         {
             if (arriendo.VerificarLicencia())
